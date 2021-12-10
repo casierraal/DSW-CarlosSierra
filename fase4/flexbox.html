@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <h1>FLEX BOX - LISTAS Y ENLACES</h1>
+    </header>
+    <nav> <a href="index.html">CONTENIDO</a>
+        <ul>
+            <li> <a href="index.html"> INICIO</a></li>
+            <li>TEMAS
+                <UL>
+                    <LI> <a href="flexbox.html">FLEXBOX</a></LI>
+                    <LI> <a href="listasyenlaces.html"> LISTAS Y ENLACES</a></LI>
+                </UL>
+            </li>
+            <li>RECURSOS DIGITALES
+                <UL>
+                    <LI> <a href="recursos1.html"></a>  RECURSOS 1</LI>
+                    <LI> <a href="recursos2.html"></a> RECURSOS 2</LI>
+                </UL>
+            </li>
+            <li>APRENDIZAJES</li>
+            <li>ACERCA DE</li>
+            
+    </nav>
+    <main>
+        <section>
+            <article> 
+                 
+            </article>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F-KCncXMPk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <article>
+                <p> <h2>FLEX BOX</h2>  </P>
+                
+
+                   <h2>¿Qué es Flexbox?</h2> 
+Flexbox es un módulo de diseño de CSS3 que se creó para mejorar la forma en la que se hace diseño responsive, evitando así el uso de float, escribiendo menos código y facilitando el posicionamiento de elementos, incluso no teniendo noción del tamaño de éstos. Básicamente la idea de Flexbox es poder alterar el ancho, alto y posicionamiento de elementos de la mejor manera con el espacio del que disponemos.
+
+<h3>   Estructura </h3>
+
+La estructura de Flexbox se compone de contenedores padre e hijos (Contenedor-Flex y Elementos-Flex respectivamente)
+
+             <img src="img/estructura.jpg" alt="Estructura De Un flexbox">          
+
+<P> El Contenedor-Flex es nuestro contenedor padre, y es él quién va a contener a todos los elementos hijos a los cuáles queremos posicionar.</P>
+
+El Elemento-Flex es nuestro elemento hijo, el cual utilizará todo el espacio disponible para ubicarse de acuerdo a las propiedades a las cuales este sometido junto a los demas Elementos-Flex contenidos.
+Cada diseño flex esta compuesto por dos ejes: 
+
+Un eje principal que define el posicionamiento horizontal de los Elementos-Flex. 
+Un eje secundario que define el posicionamiento vertical de los Elementos-Flex.
+El Contendor-Flex contiene direcciones que definen el origen y el fin del flujo de Elementos-Flex:
+
+Inicio principal 
+Fin principal
+Inicio secundario
+Fin secundario
+ 
+Cada Elemento-Flex está definido por sus dimensiones, anchura(tamaño principal) y altura(tamaño secundario) que dependen del eje principal y el eje secundario. 
+ 
+
+<h3>  Propiedades</h3>
+Si queremos utilizar las propiedades de Flexbox tendremos que definirlo mediante la propiedad display y su valor flex o inline-flex dentro del selector que nosotros definamos que es nuestro elemento padre o Contenedor-Flex.
+<p> .contenedor-padre {
+
+    display: flex
+
+}</p>
+
+
+En este artículo solo daremos un pantallazo de las principales propiedades del elemento padre con una breve descripción en cada una.
+
+<p> Flex-direction
+    Es la encargada de definir el eje principal y secundario de nuestros elementos hijos. Estos ejes como ya se mencionó pueden se verticales, formando columnas y horizontales formando filas.
+    
+    .contenedor-padre { 
+    
+         display: flex ;
+    
+         flex-direction: row | row-reverse | column | column-reverse ; 
+    
+    } </p>
+
+
+
+     <p> Flex-wrap
+        Por defecto flex, trata de disponer de los elementos en una misma línea, si no es el caso que necesitás, con flex-wrap podés ordenar los elementos en mas de una fila o columna.
+        
+        .contenedor-padre {
+        
+            display: flex ;
+        
+            flex-wrap: nowrap | wrap | wrap-reverse ;
+        
+        } </p>                     
+
+
+
+<p>
+    Justify-content
+    Cuando nombramos el eje principal de un elemento padre, es decir el eje horizontal, se destaca esta propiedad para dar direccionamiento a los elementos hijos.
+    
+    .contenedor-padre {
+    
+       display: flex ;
+    
+       justify-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly ;
+    
+    }
+</p>
+
+
+
+             
+
+
+ <p>  Align-items
+    Al igual que justify-content esta propiedad te permite distribuir los elementos en un eje, pero esta vez en el eje vertical.
+    
+    .contenedor-padre {
+    
+        display: flex ;
+    
+        align-items: flex-start | flex-end | center | stretch | baseline ;
+    
+    } </p>             
+
+
+             
+
+                                        
+
+ 
+
+Para finalizar hay que remarcar que dichas propiedades se pueden combinar unas con otras, definir contenedores padres con elementos hijos a los cuales también pueden definirse como padres que contienen hijos y así sucesivamente. Es por ello que Flexbox nos da un sin fin de posibilidades para crear disposiciones para los componentes de nuestras páginas web, de una manera sencilla y muy fácil de aprender.
+
+<P><H6>Castro González, J. (2020). Aplicación web para la evaluación y planificación de menús escolares.</H6></P>
+
+</p>
+            </article>
+        </section>
+        <aside>
+            
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+
+
+    </main>
+    <footer><h6> Proyecto de sitio web 2021 - 16-04
+        <p> Carlos Sierra Alarcon </p>
+        <p> Programa: Ingenieria De Sistemas </p>
+        <p>Celular 3015073888 <br>
+            Correo: casierraal@unadvirtual.edu.co
+   <p>Fecha De Creacion: 30 agosto de 2021</p></footer>
+    
+    
+</body>
+</html>

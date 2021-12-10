@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <h1>FLEX BOX - LISTAS Y ENLACES</h1>
+    </header>
+    <nav> <a href="index.html">CONTENIDO</a>
+        <ul>
+            <li> <a href="index.html"> INICIO</a></li>
+            <li>TEMAS
+                <UL>
+                    <LI> <a href="flexbox.html">FLEXBOX</a></LI>
+                    <LI> <a href="listasyenlaces.html"> LISTAS Y ENLACES</a></LI>
+                </UL>
+            </li>
+            <li>RECURSOS DIGITALES
+                <UL>
+                    <LI> <a href="recursos1.html"></a>  RECURSOS 1</LI>
+                    <LI> <a href="recursos2.html"></a> RECURSOS 2</LI>
+                </UL>
+            </li>
+            <li>APRENDIZAJES</li>
+            <li>ACERCA DE</li>
+            
+    </nav>
+    <main>
+        <section>
+            <article> 
+                
+<P> <H1>  LISTAS Y ENLACES</H1>
+
+    <img src="img/LISTAS Y ENLACES.JPG" alt="imagen de referencia para el tema">
+    
+    <P> <h2>Listas no ordenadas</h2> <ul>
+        Las listas no ordenadas van dentro de la etiqueta <ul> HTML y de su cierre </ul>. Cada punto que queramos añadir a la lista, lo haremos dentro de la etiqueta <li> y su cierre.
+        
+        Si no le indicamos nada a la etiqueta <li> HTML, ésta se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto, podemos gracias al atributo “type”.
+        
+        Así podemos hacer que la lista esté definida por puntos negros (li type=”disc”), por puntos con el fondo blanco (li type=”circle”) o por cuadrados (li type=”square”). Aunque esta apariencia dependerá del navegador. Hay algunos navegadores que dan otras apariencias a estos mismos atributos.
+        
+        Vamos con un pequeño ejemplo en código:
+        
+        <ul>
+        
+        <li type="circle">Esto es un tipo de punto.</li>
+        
+        <li type="square">Este es otro.</li>
+        
+        <li type="disc">Y este es otro diferente.</li>
+        
+        </ul>
+        Cuyo resultado visual será el que veremos a continuación:
+        
+        
+       <p> Esto es un tipo de punto.</p> 
+        
+        <p> Este es otro. </p>  
+        
+        <p> Y este es otro diferente.</p>
+        
+        <h2>Listas ordenadas </h2><ol>
+
+        Las listas ordenadas van enmarcadas dentro de las etiquetas <ol> </ol>. Cada punto de la lista se escribe con la misma etiqueta que en las no numeradas: <li>. Pero al ser listas ordenadas los símbolos serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos puntos.
+        
+        En las listas ordenadas podemos hacer que el primer punto comience con el número que nosotros queramos. Lo conseguiremos gracias al atributo “value”. Los siguientes puntos que escribamos se generarán automáticamente por orden, partiendo de ese número.
+        
+        Por ejemplo, si queremos que nuestra lista empiece por el número 20, sólo deberemos escribir lo siguiente:
+        
+        <ol>
+        
+        <li value="20">Este será el número 20. </li>
+        
+        <li>Este será el 21. </li>
+        
+        <li> Este será el 22. Y así sucesivamente. </li>
+        
+        </ol>
+        Y el resultado será el siguiente:
+        
+        <p>  Este será el número 20.
+        
+            Este será el 21.
+            
+            Este será el 22. Y así sucesivamente. </p>
+       
+        
+        <h3>  Listas de definiciones: <dl>, <dt> y <dd></dd> </h3>
+        Si lo que vamos a hacer es un listado de definiciones, podemos usar las etiquetas dl>, dt> y dd>. Vamos a explicarlas por partes:
+        
+        La etiqueta dl> viene de los términos ingleses “Definiton list” y nos indica que dentro de ella, entre ella y su cierre, va a ir una definición.
+        
+        La etiqueta dt> viene de los términos “Definition term” y dentro de ella irá el término que vamos a definir. Para entendernos mejor, dentro de dt> iría el título de la definición.
+        
+        La etiqueta dd> viene de los términos “Definition description” y nos dice que dentro de ésta irá la definición.
+        
+        Si escribimos varios listados de definición, éstas se separarán automáticamente entre ellas para facilitar su diferenciación.
+        
+        Aquí podemos ver un ejemplo de código de dos listado de definición:
+        
+        dl>
+        
+        dt>Aquí va el término que definiremos</dt>
+        
+        dd>Y aquí dentro irá la definición propiamente dicha.</dd>
+        
+        /dl>
+        
+        dl>
+        
+        dt>Aquí va la segunda definición</dt>
+        
+        dd>Y aquí dentro irá la segunda definición, separada automáticamente de la anterior.</dd>
+        
+        /dl>
+        Cuyo resultado será el siguiente:
+        
+        Aquí va el término que definiremos
+        
+        Y aquí dentro irá la definición propiamente dicha.
+        
+        
+        
+        Aquí va la segunda definición
+        
+        Y aquí dentro irá la segunda definición, separada automáticamente de la anterior.
+        .
+
+        <P><H6>Llibre Giralt, M. (2016). Introducción al HTML y al CSS, septiembre 2011.</H6></P>
+
+    </P>
+
+    <p>  <h2> ENLACES</h2>
+        
+        <P>Los enlaces en HTML nos permiten de una manera muy cómoda redirigir al usuario a otra parte, cuando éste pinche en dicho enlace. Podemos hacer que el usuario se vaya a otra url distinta a la que está, o podemos hacer que vaya a otra parte pero dentro del mismo archivo en el que está, dentro de la misma url.
+
+            Esta explicación la entenderás más fácilmente cuando te presentemos los tipos de enlaces que hay y veas sus características. Así pues, vamos a ello:
+            
+            La etiqueta <a>
+            Es dentro de esta etiqueta y de su cierre (</a>) dónde encontraremos el enlace. Todo lo que esté dentro de ella, ya sea texto o una imagen, estará considerado como un enlace y el navegador lo interpretará así.
+            
+            Atributo href
+            Para que un enlace esté activo debemos indicar dentro de él el destino del mismo. Para establecer este destino le colocamos a la etiqueta <a> este atributo. La etiqueta completa nos quedaría así:
+            
+            <a href=“enlace”>Pincha aquí para ir al destino del enlace</a>
+            Las urls pueden tener dos tipos de rutas o direcciones: Las urls con dirección relativa y las urls con dirección absoluta. Vamos a explicarlas a continuación:
+            
+            Direcciones absolutas y relativas
+            Las direcciones absolutas son aquellas que contienen la url completa. En estas direcciones podemos ver todos los elementos de la dirección. Un ejemplo muy claro es el siguiente:
+            
+            <a href="https://hazunaweb.com/curso-de-html/mapas-de-imagenes/">Artículo de mapas de imágenes</a>
+            Si pincháramos en el enlace iríamos directamente al artículo de mapas de imágenes del tutorial. Fijaros en lo que hablábamos: podemos apreciar todas las partes de la url.
+            
+            En las direcciones relativas vemos que no está la url completa. En este tipo de direcciones, las partes que faltan de la dirección el navegador las genera de la propia página en la que está el enlace. Por ejemplo, si dentro de la página encontráramos la siguiente url…
+            
+            <a href=”/curso-de-html/mapas-de-imagenes/”>Artículo de mapas de imágenes</a>
+            
+            …el navegador entiende que dentro de la página y de la carpeta en la que se encuentra, debe dirigirse al fichero “mapas-de-imagenes”.
+            
+            Protocolos
+            Los enlaces nos pueden llevar a url con diferentes protocolos. Nosotros os vamos a presentar los dos más importantes:
+            
+            http: Este es el protocolo básico de los servidores webs.
+            https: Este protocolo se diferencia del anterior en que es un protocolo cifrado. Es decir, la información que se envía y se recibe con esa url esta siendo encriptada para que nadie más pueda interceptar y usar esa información. Las páginas con este protocolo son las conocidas como “páginas seguras”. Esta encriptación de los datos produce una pequeña ralentización de la página debido a que los datos se envían cifrados.
+            Mailto
+            La url mailto es aquella que te lleva directamente a una dirección de correo y, más concretamente, a redactar un mensaje. Una dirección mailto sería la siguiente:
+            
+            <a href=“mailto:correodeejemplo@correodeejemplo.com>correodeejemplo@correodeejemplo.com</a>
+            
+            Fíjate en el ejemplo que acabamos de poner. Nosotros, como texto para albergar el enlace, hemos puesto la misma dirección que la que va a abrir la url. ¿Por qué?
+            
+            El programa de correo que abre el navegador es aquel que el usuario tenga como predefinido. Nosotros te aconsejamos que como texto para albergar el enlace pongas la dirección de correo electrónico. Windows por defecto tiene predeterminado el Outlook y al pinchar en el enlace lo abre directamente. Muchos usuarios prefieren copiar la dirección y pegarla en su programa de correo.
+            
+           <h3>  La etiqueta target: </h3>
+            La etiqueta sirve para definir la forma en la que se accederá a la nueva url. Esta etiqueta la escribimos dentro del enlace para predefinirla. Puede ser de diferentes tipos:
+            
+            _self: Es el valor por defecto del parámetro target. El enlace se abrirá en el mismo marco en el que está alojado.
+            _blank: Para hacer que ese enlace se abra en una ventana a parte.
+            _top: Elimina todos los marcos existente y muestra la nueva página en la ventana original sin marcos.
+            _parent : Muestra la nueva página en el <frameset> que contiene al marco donde se encuentra alojado el enlace. La etiqueta <frameset> la explicamos en otro artículo.
+            Anclas HTML
+            Un ancla nos sirve para dirigir al usuario a otra parte distinta pero dentro del mismo fichero en el que estamos. Para crear un ancla debemos crear primero el lugar al que queremos acceder. Debemos escribir lo siguiente:
+            
+            <a name=“ancla”>
+            
+            Y después debemos escribir un enlace con el código siguiente:
+            
+            <a href= “#ancla”>Enlace para acceder al ancla</a>
+            
+            Yo he situado un ancla justo al principio de este artículo. Si pinchas en el siguiente enlace acudirás a ella y verás el efecto.
+            
+            Ir al principio del artículo gracias al ancla
+            
+            Y para terminar te mostraremos como podemos hacer que un enlace nos diriga directamente a una imagen. Le hemos indicado al enlace que nos abra la imagen en una ventana diferente gracias al target:blank. El código es el siguiente:
+            
+            <a href="/imagenes/prueba.jpg" target="_blank">Ir
+                
+                
+                        a ver el ejemplo de prueba </a>
+            Y el resultado le verás pinchando en aquí: Ir a ver el ejemplo de prueba
+            
+            Y terminamos con otro tipo de enlace. Esta vez el enlace está en la imagen. Si pinchas en ella, irás al artículo dónde vimos por primera vez esa fotografía. Primero te mostramos el código:
+            
+            <a href="/curso-de-html/mapas-de-imagenes/" target="_blank"><img src="/imagenes/prueba-mapa.jpg" alt="Pincha para ir al enlace" width="300" height="214" border="0"></a>
+            Y aquí tienes la imagen con el enlace. Se abrirá en una ventana nueva gracias al target blank.
+            
+            Pincha para ir al enlace
+            rel=”nofollow” para buscadores
+            Aunque esto no es un curso sobre SEO (optimización para buscadores), es importante comentar en este artículo que los enlaces “normales” orientan a Google a la hora de saber qué páginas son importantes y cuáles no. Una páginas con muchos enlaces suele indicar que es más importante que otra que no tiene enlaces. En ocasiones podemos querer poner un enlace pero no transmitir peso, es decir, no indicar a Google que esa página es importante.
+            
+            Podemos querer hacerlo por muchos motivos, por ejemplo, si los usuarios de nuestra página pueden poner enlaces, tal vez no queramos que éstos nos llenen la web de spam poniendo enlaces solo para ganar fuerza. También podemos querer hacerlo internamente dentro de nuestra web porque no queramos que ciertas secciones sean leídas e indexadas por Google, o simplemente porque no las consideremos importantes para el buscador, añadiendo el atributo
+            
+            rel=”nofollow”
+            
+            dentro de la etiqueta <a> indicamos a Google, y otros buscadores, que no transmitan fuerza a dicho enlace.
+            En esta misma página también podéis ejemplos dicho atributo. Por ejemplo, con <a href=”/contactar/” rel=”nofollow”>Contacto</a> indicamos que no transmita peso a la sección de contacto.
+        </P>
+        
+    
+
+    </ARTIcle>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+        <aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatem facilis in inventore dignissimos soluta, nesciunt beatae corporis eius atque veniam cupiditate delectus, explicabo corrupti obcaecati, eos fuga minus quisquam!</p>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+
+
+    </main>
+    <footer><h6> Proyecto de sitio web 2021 - 16-04
+        <p> Carlos Sierra Alarcon </p>
+        <p> Programa: Ingenieria De Sistemas </p>
+        <p>Celular 3015073888 <br>
+            Correo: casierraal@unadvirtual.edu.co
+   <p>Fecha De Creacion: 30 agosto de 2021</p></footer>
+    
+    
+</body>
+</html>
